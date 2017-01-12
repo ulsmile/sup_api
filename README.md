@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the introduction for web app environment.
 
-Things you may want to cover:
+About
+ This repository includes both Dockerfile/docker-compose.yml and rails app directory.
+ You can use it by cloning to your localhost using
 
-* Ruby version
+	'git clone https://github.com/ulsmile/web_app.git'
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ Then, 'docker-compose up' at /web_app.
