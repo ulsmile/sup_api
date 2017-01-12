@@ -1,0 +1,15 @@
+version: '2'
+services:
+    db:
+        image: mongo
+        ports:
+            - "27017:27017"
+    web:
+        build: . 
+        command: ["rails","server","-p","3001","-b","0.0.0.0"]
+        volumes:
+            - .:/myapp
+        ports:
+            - "3001:3001"
+        links:
+            - db
