@@ -1,8 +1,8 @@
 class MastersController < ApplicationController
   def index
-#    @masters = Master.all
-    personal = {'name' => 'YAmada','old' => 28}
-    render json:  personal
+    @masters = Masters.all
+
+    render :json => @masters
   end
 
   def insert
