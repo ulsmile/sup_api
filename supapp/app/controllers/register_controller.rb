@@ -3,6 +3,7 @@ class RegisterController < ApplicationController
 
     @player = Players.find_by(player_id: params[:player_id])
     h = @player
+    bindng.pry
     h.delete(:gender)
 
     render :json => h

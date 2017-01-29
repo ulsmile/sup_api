@@ -4,8 +4,11 @@ services:
         image: mongo
         ports:
             - "27017:27017"
+        volumes: 
+            - ./mongodata:/data/db
     web:
         build: . 
+        image: sivertigo/webapp
         command: ["rails","server","-p","3001","-b","0.0.0.0"]
         volumes:
             - ./supapp:/myapp
