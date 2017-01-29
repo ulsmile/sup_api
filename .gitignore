@@ -8,10 +8,10 @@
 /.bundle
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+/supapp/log/*
+/supapp/tmp/*
+!/supapp/log/.keep
+!/supapp/tmp/.keep
 
 # Ignore Byebug command history file.
 .byebug_history
