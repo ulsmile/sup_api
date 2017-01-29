@@ -6,12 +6,10 @@ class PlayersController < ApplicationController
     render :json => @players
   end
   def show
-    @players = Players.find(2)
+    @players = Players.find_by(player_id: params[:player_id])
     puts @players
     render :json => @players
-
   end
-
   def new
 
   end
