@@ -9,4 +9,4 @@ WORKDIR $APP_HOME/
 ADD ./supapp $APP_HOME/
 RUN gem install bundler --pre
 RUN bundle install --jobs=4
-ORKDIR $APP_HOME
+WORKDIR $APP_HOME
