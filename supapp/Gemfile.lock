@@ -39,16 +39,20 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     bson (4.2.1)
     builder (3.2.2)
     byebug (9.0.6)
+    coderay (1.1.1)
     concurrent-ruby (1.0.4)
+    debug_inspector (0.0.2)
     erubis (2.7.0)
     ffi (1.9.14)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
-    libv8 (3.16.14.17-x86_64-linux)
+    libv8 (3.16.14.17)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -70,6 +74,23 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-byebug (3.4.2)
+      byebug (~> 9.0)
+      pry (~> 0.10)
+    pry-doc (0.10.0)
+      pry (~> 0.9)
+      yard (~> 0.9)
+    pry-nav (0.2.4)
+      pry (>= 0.9.10, < 0.11.0)
+    pry-rails (0.3.4)
+      pry (>= 0.9.10)
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
     puma (3.6.2)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -102,6 +123,7 @@ GEM
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     ref (2.0.0)
+    slop (3.6.0)
     spring (2.0.0)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -124,6 +146,7 @@ GEM
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    yard (0.9.8)
 
 PLATFORMS
   ruby
@@ -133,6 +156,11 @@ DEPENDENCIES
   listen (~> 3.0.5)
   mongo
   mongoid
+  pry-byebug
+  pry-doc
+  pry-nav
+  pry-rails
+  pry-stack_explorer
   puma (~> 3.0)
   rails (~> 5.0.1)
   spring
