@@ -1,8 +1,12 @@
 class MastersController < ApplicationController
   def index
-    @masters = Masters.all
+#    @masters = Masters.all
 
-    render :json => @masters
+    sample_json = {"key":"value", "array": ["aa","aas"]}
+    puts Masters
+    puts Players
+
+    render :json => Players.all
   end
 
   def insert

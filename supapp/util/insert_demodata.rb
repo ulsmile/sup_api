@@ -1,7 +1,8 @@
 require 'json'
 require 'mongo'
 require 'mongoid'
-json_data = open("demo_data.json") do |io|
+
+json_data = open(File.expand_path(File.dirname(__FILE__)) + "/demo_data.json") do |io|
   JSON.load(io)
 end
 client = Mongo::Client.new(['webapp_db_1:27017'],:database => 'wasepa')
