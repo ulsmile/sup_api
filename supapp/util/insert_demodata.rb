@@ -10,7 +10,7 @@ db = client.database
 
 for i in 0..9 do
   for j in 0..9 do
-    coll = db.collection('Players')
+    coll = db.collection('players')
     players = [{
       'player_id' => json_data[i]['player_id'], 
       'line_id' => json_data[i]['line_id'], 

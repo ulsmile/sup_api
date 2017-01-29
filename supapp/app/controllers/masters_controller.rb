@@ -3,10 +3,10 @@ class MastersController < ApplicationController
 #    @masters = Masters.all
 
     sample_json = {"key":"value", "array": ["aa","aas"]}
-    puts Masters
-    puts Players
 
-    render :json => Players.all
+    @players = Players.all
+    puts @players
+    render :json => @players
   end
 
   def insert
