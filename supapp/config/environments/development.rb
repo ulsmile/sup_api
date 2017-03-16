@@ -45,4 +45,3 @@ end
 WebApp::Application.configure do
   config.react.variant = :development
 end
-end

@@ -5,7 +5,7 @@ require 'mongoid'
 json_data = open(File.expand_path(File.dirname(__FILE__)) + "/demo_data.json") do |io|
   JSON.load(io)
 end
-client = Mongo::Client.new(['webapp_db_1:27017'],:database => 'wasepa')
+client = Mongo::Client.new(['db:27017'],:database => 'wasepa')
 db = client.database
 
 for i in 0..9 do
