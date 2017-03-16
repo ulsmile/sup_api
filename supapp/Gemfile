@@ -49,3 +49,6 @@ gem 'therubyracer'
   gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
   gem 'pry-stack_explorer' # スタックをたどれる
   gem 'pry-nav'
+
+  #use react rails
+  gem 'react-rails'

@@ -73,3 +73,7 @@ Rails.application.configure do
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
 end
+
+WebApp::Application.configure do
+  config.react.addons = true
+end
