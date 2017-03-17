@@ -52,3 +52,4 @@ gem 'therubyracer'
 
   #use react rails
   gem 'react-rails'
+  gem 'devise'
