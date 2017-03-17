@@ -16,7 +16,10 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+<<<<<<< HEAD
 /mongodata/*
 .mongodata
+=======
+>>>>>>> 98cdfee3c60c3000fa559f629326f19e5fb73d64
 
 *.swp
