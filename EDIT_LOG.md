@@ -7,13 +7,13 @@
 4. web_app_db1:27017をdb:27017に書き換えた
 
 
-## Gemfileに"gem 'devise'"を追加
+#### Gemfileに"gem 'devise'"を追加
 [参考：gem Deviseについて。](https://launchschool.com/blog/how-to-use-devise-in-rails-for-authentication)
 rails g devise:installまで行った。
 APIサーバにおいてviewが必要ないので、
 以降は行なっていない。
 
-## Dockerfileを編集
+####Dockerfileを編集
 
 ```Dockerfile
 10 WORKDIR /tmp
@@ -24,7 +24,7 @@ APIサーバにおいてviewが必要ないので、
 
 これによって、Gemfileを追加していない時の`Docker build .`をした時にbundle installがキャッシュされて速度が改善される。
 
-## サイトに従ってcontrollerを３つ追加
+####サイトに従ってcontrollerを３つ追加
 app/controller/api/v1/api_controller.rb
 app/controller/api/v1/player_controller.rb
 app/controller/api/v1/records_controller.rb
@@ -33,7 +33,7 @@ app/controller/api/v1/records_controller.rb
 この記事を参考にバージョン管理ができるようにapiコントローラを切り分けました。ただし、現存の様々なコントローラはまだ残っています。
 ルーティングはまだやってません。
 
-## web_app_db1:27017をdb:27017に書き換えた
+####web_app_db1:27017をdb:27017に書き換えた
 
 util/insert_demodata.rbとconfig/mongoid.yml内のdb場所について、書き換え。
 web_app_db1というアプリのディレクトリ名に依存する（docker-compose up時にコンテナがディレクトリ名で作られるため）という問題を解消。これでgit clone時にディレクトリ名を変えても大丈夫。
