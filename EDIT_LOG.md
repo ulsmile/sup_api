@@ -22,7 +22,8 @@ WebApp::Application.configure do
   WebApp::Application.configure do
     config.react.variant = :development
 	end
-	```
+
+```
 
 	参照：[react-rails](https://github.com/reactjs/react-rails))
 
@@ -50,6 +51,7 @@ APIサーバにおいてviewが必要ないので、
 12 ADD ./supapp/Gemfile.lock Gemfile.lock
 13 RUN bundle install --jobs=4 --system
 ```
+
 これによって、Gemfileを追加していない時の`Docker build .`をした時にbundle installがキャッシュされて速度が改善される。
 
 ## サイトに従ってcontrollerを３つ追加
