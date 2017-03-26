@@ -49,10 +49,7 @@ gem 'therubyracer'
   gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
   gem 'pry-stack_explorer' # スタックをたどれる
   gem 'pry-nav'
-<<<<<<< HEAD
 
   #use react rails
   gem 'react-rails'
   gem 'devise'
-=======
->>>>>>> 98cdfee3c60c3000fa559f629326f19e5fb73d64
