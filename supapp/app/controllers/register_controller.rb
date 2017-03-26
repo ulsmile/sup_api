@@ -4,7 +4,6 @@ class RegisterController < ApplicationController
     render json: @player
   end
   def show
-
     @player = Players.find_by(player_id: params[:player_id])
     render :json => @player
   end
@@ -18,13 +17,24 @@ class RegisterController < ApplicationController
   def create
     @player = Players.new(params[:players])
     if @player.save
-      redirect_to @person
+      redirect_to @player
     else
       render :action => 'new'
     end
   end
 
   def update
-
+      @player = Players.find(params[:player_id])
+      @player.attributes = params[:players]
+      if @player.save
+        redirect_to @player
+      else
+        render :action => 'edit'
+      end
+  end
+  def destroy
+    @player = Players.find(params[:player_id])
+    @player.destroy
+    redirect_to players_path
   end
 end
