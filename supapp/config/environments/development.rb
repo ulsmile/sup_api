@@ -43,5 +43,4 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
 WebApp::Application.configure do
-  config.react.variant = :development
 end

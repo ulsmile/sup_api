@@ -1,11 +1,11 @@
-class PlayersController < ApplicationController
+class PlayerController < ApplicationController
 
   def index
-    @players = Players.all
+    @players = Player.all
     render json: @players
   end
   def show
-    @players = Players.find_by(player_id: params[:player_id])
+    @players = Player.find_by(player_id: params[:player_id])
     render json: @players
   end
   def new

@@ -75,5 +75,4 @@ Rails.application.configure do
 end
 
 WebApp::Application.configure do
-  config.react.addons = true
 end
