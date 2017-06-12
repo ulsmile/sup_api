@@ -11,7 +11,7 @@ WORKDIR /tmp
 ADD ./supapp/Gemfile Gemfile
 #ADD ./supapp/Gemfile.lock Gemfile.lock
 RUN bundle install --jobs=4 --system
-RUN bundle exec rails g rspec:install
+#RUN bundle exec rails g rspec:install
  # Everything up to here was cached.  This includes
 # the bundle install, unless the Gemfiles changed.
 # Now copy the app into the imag # Everything up to here was cached.  This includes
