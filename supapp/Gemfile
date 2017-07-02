@@ -11,6 +11,7 @@ gem 'rails', '~> 5.0.1'
 gem 'puma', '~> 3.0'  #pumaをwebサーバとして使う
 gem 'the_garage', github: 'cookpad/garage' #APIサーバを簡単に作るgem
 gem 'prmd'
+gem 'rack-cors'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

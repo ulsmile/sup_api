@@ -1,8 +1,8 @@
 FROM ruby:2.3.1
-RUN apt-get update -qq 
-RUN apt-get upgrade -y
-RUN apt-get clean 
-RUN rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
+#RUN apt-get update -qq 
+#RUN apt-get upgrade -y
+#RUN apt-get clean 
+#RUN rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 ENV APP_HOME /myapp
 RUN gem install bundler --pre
 # Copy the Gemfile and Gemfile.lock into the image. 
